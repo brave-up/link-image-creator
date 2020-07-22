@@ -16,9 +16,7 @@
     document.querySelector("#create").addEventListener('click', () => {
         const linkVideo = document.querySelector('#link_video').value;
         const linkImage = document.querySelector('#link_image').value;
-        document.querySelector('#result').innerHTML = `
-            <a href="${linkVideo}" ><img src="${linkImage}"></a>
-        `;
+        document.querySelector('#result').innerHTML = `<a href="${linkVideo}" ><img src="${linkImage}"></a>`;
     });
 </script>
 </html>
