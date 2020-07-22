@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://imgbb.com/" target="_blank">Ir a imgbb</a><br>
+    <span>Link video:</span><input type="text" value="" placeholder="link video" id="link_video"><br>
+    <span>Link imagen:</span><input type="text" value="" placeholder="link imagen" id="link_image"><br>
+    <button id="create">generar imagen</button>
+    <div id="result"></div>
+</body>
+<script>
+    document.querySelector("#create").addEventListener('click', () => {
+        const linkVideo = document.querySelector('#link_video').value;
+        const linkImage = document.querySelector('#link_image').value;
+        document.querySelector('#result').innerHTML = `
+            <a href="${linkVideo}" ><img src="${linkImage}"></a>
+        `;
+    });
+</script>
+</html>
